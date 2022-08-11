@@ -10,6 +10,9 @@ user1 = {
     score: 100,
     isPresent: true
 }
+user1.firstName = 'Joe';
+user1['firstName'] = 'Joe';
+
 
 user2 = {
     firstName: 'Joe',
@@ -27,12 +30,13 @@ hundreds = [100, 200, 300, 400, 500, 600, 700, 800, 900];
 selectedUser = 0;
 selectedItem = 'score';
 
-// console.log(users);
-// console.log(users[1])// access by bracket notation
-// console.log(users[0].firstName); // access by dot notation
-// console.log(users[selectedUser].score);
-// console.log(users[1]['score']);
-// console.log(users[0]['firstName']); // access by both by bracket notation
+console.log(users);
+
+console.log(users[1])// access by bracket notation
+console.log(users[0].firstName); // access by dot notation
+console.log(users[selectedUser].score);
+console.log(users[1][selectedItem]);
+console.log(users[0]['firstName']); // access by both by bracket notation
 
 test0 = 0;
 // VARIABLE TYPES
