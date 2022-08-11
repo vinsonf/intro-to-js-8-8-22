@@ -164,6 +164,9 @@ const li = document.createElement('li');
 // change text content of the h1 element
 li.innerHTML = user1.firstName;
 
+user1.firstName = 'Joe';
+li.innerHTML = user1.firstName;
+
 
 // append the h1 element to the body
 document.body.append(h1);
@@ -175,7 +178,6 @@ h1.remove();
 
 
 // retrieve elements from document
-
 const p = document.querySelector('p');
 
 // interact with the elements styles
