@@ -6,8 +6,8 @@ let score = 0;
 
 const backticks = `backticks`;
 // data types
-const strings = 'single' || "double" || `${backticks}`;
-const numbers = 1 || 2.7 || -3.2;
+const strings = 'single' || "double" || `${backticks}` || ``;
+const numbers = 1 || 2.7 || -3.2 || 0;
 const booleans = true || false;
 
 // complex data types
