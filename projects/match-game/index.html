@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="./js/main.js"></script>
+</head>
+<body>
+    <style>
+        .card {
+            height: 160px;
+            width: 120px;
+            background-size: cover;
+            background-position: center;
+            display: inline-block;
+           
+
+        }
+
+        .flip {
+            animation: flip 1s forwards;
+        }
+        
+        .card-back::before {
+            content: "";
+            display: inline-block;
+            background-color: black;
+            border: 1px solid white;
+            height: 160px;
+            width: 120px;
+            backface-visibility: hidden;
+        }
+
+        .card-back {
+            background-color: black;
+        }
+
+        @keyframes flip {
+            0% {
+                transform: rotateY(0deg);
+            }
+            25% {
+             
+            }
+            26% {
+            
+            }
+            100% {
+                transform: rotateY(180deg);
+                
+               
+            }
+        }
+
+        .hulk {
+            background-image: url('https://www.picturesensations.com/wp-content/uploads/2016/11/M007-1p-1__33031.jpg');
+        }
+
+        .superman {
+            background-image: url('https://www.geekalerts.com/u/Superman-Art-Print.jpg')
+        }
+
+        .wonder-woman {
+            background-image: url('https://i.pinimg.com/originals/e1/70/9c/e1709cc89089bb1a8b3e6bac8d9b6030.jpg')
+        }
+
+        .spiderman {
+            background-image: url('https://external-preview.redd.it/DSKuqLne6LN38-iBXzZSTPezIiP4fthpraH7xl2UNqs.jpg?auto=webp&s=e9be5ef87d7f5353b0bd0e5ef837d47cf3508c5e')
+        }
+        .wolverine {
+            background-image: url('https://i.etsystatic.com/9531019/r/il/0a435e/1607457707/il_570xN.1607457707_mglf.jpg')
+        }
+    </style>
+   
+</body>
+</html>
