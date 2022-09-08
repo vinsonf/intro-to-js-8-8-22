@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="./js/main.js"></script>
+</head>
+<body>
+    <h1>Hello</h1>
+
+    <style>
+        form:valid {
+            background-color: green;
+        }
+        form:invalid {
+            background-color: red;
+        }
+    </style>
+    
+
+    <form name="super">
+        <input type="checkbox" name="terms">
+        <input pattern="[A-Za-z]{6,20}" name="name" type="text" placeholder="super hero name">
+        <input required name="power" type="text" placeholder="super hero power">
+        <button>add super</button>
+    </form>
+    
+
+    <button onclick="getSuperHeroes()">get super</button>
+   
+</body>
+</html>
+
+
